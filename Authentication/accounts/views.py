@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 
 class HomeView(APIView):
-    permission_classes=[IsAuthenticated]
+
     def get(self,request):
         a={'you are in homepage'}
         return Response(a)
